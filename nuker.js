@@ -1,4 +1,4 @@
-const coins = true; // Put to false if you don't want the coin destroyer.
+const coin = true; // Put to false if you don't want the coin destroyer.
 let score = prompt('What score do you want for all the lessons?\nIt will take 5 minutes to skip.\nFor 10 lessons it would take 50 mins to skip. type "mins" to change the amount of minutes.')
 let minutes = 5
 if (score === "mins") {
@@ -35,7 +35,7 @@ fetch("https://login.i-ready.com/student-reward/student/credits", {
     snitcher()
     let time = (Math.ceil(r / 50) * 50 / 50) * 5
     console.log("Removing coins will take " + time + " seconds.")
-    if (coins === true) {
+    if (coin === true) {
         let e = setInterval(coins, 5000)
     }
     setTimeout(function() {
